@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+<title>承运商运费保障平台 · 测试环境</title>
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div id="app">
+    <header class="topbar">
+      <div class="brand">
+        <span class="logo">JT</span>
+        <div>
+          <div class="title">承运商运费保障平台</div>
+          <div class="sub">极兔速递 · 河南公司</div>
+        </div>
+      </div>
+      <div class="badges">
+        <span class="badge warn">测试环境 · 模拟数据</span>
+        <span class="badge" id="clock"></span>
+      </div>
+    </header>
+
+    <nav class="role-bar" id="roleBar"></nav>
+
+    <aside class="script-panel" id="scriptPanel">
+      <div class="script-head">
+        <strong>演示剧本</strong>
+        <button type="button" class="link-btn" id="btnReset">重置数据</button>
+      </div>
+      <ol id="scriptSteps"></ol>
+      <p class="hint">按序号切换角色并点操作按钮，即可跑通「发单→接单→履约→首笔代扣→尾款/兜底」。</p>
+    </aside>
+
+    <main class="main" id="main"></main>
+
+    <div id="toast" class="toast hidden"></div>
+    <div id="modal" class="modal hidden">
+      <div class="modal-card">
+        <h3 id="modalTitle"></h3>
+        <div id="modalBody"></div>
+        <div class="modal-actions" id="modalActions"></div>
+      </div>
+    </div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
